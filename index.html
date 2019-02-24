@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>8-bit pomodoro timer</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- nes.css -->
+    <link href="https://unpkg.com/nes.css@2.0.0/css/nes.min.css" rel="stylesheet" />
+    <!-- specific style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Press 2P font -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  </head>
+  <body>
+    <h1 class="heading">8-bit pomodoro<i class="nes-charmander"></i></h1>
+    <div class="timer-row col-sm-12">
+    <p id="time-left">  HH:MM </p>
+    </div>
+    <div class="row timerow">
+      <div class="work timercontainer col-sm-6">
+        <p id="session-label">Work</p>
+        <div class="work-timer">
+            <i class="nes-logo" id="session-decrement"> </i>
+            <p class="work time-left" id="session-length">  25 </p>
+            <i class="snes-logo" id="session-increment"> </i>
+        </div>
+      </div>
+      <div class="break timercontainer col-sm-6">
+        <p id="break-label">Break</p>
+        <div class="break-timer">
+            <i class="nes-logo" id="break-decrement"> </i>
+            <p class="break time-left" id="break-length">  5 </p>
+            <i class="snes-logo" id="session-increment"> </i>
+        </div>
+      </div>
+    </div>
+    <div class="row pokerow">
+      <div class="col-sm-6">
+        <button type="button" class="nes-btn is-success" id="start-stop">Toggle Start</button>
+      </div>
+
+      <div class="col-sm-6">
+        <button type="button" class="nes-btn is-error" id="reset">Reset Timer</button>
+      </div>
+    <div class="row sessionrow">
+      <div class="col-sm-12">
+      </div>
+    </div>
+  </body>
+</html>
