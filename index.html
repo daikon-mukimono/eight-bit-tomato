@@ -16,9 +16,14 @@
     <script type="text/javascript" src="script.js"> </script>
   </head>
   <body>
-    <h1 class="heading">8-bit pomodoro<i class="nes-charmander"></i></h1>
+    <h1 class="heading">8-bit pomodoro<i class="nes-mario"></i></h1>
+    <div class="row">
+      <div class="col-sm-12">
+      <p id="timer-label"> Work! </p>
+      </div>
+    </div>
     <div class="timer-row col-sm-12">
-    <p id="timer"> 25:00 </p>
+    <p id="time-left"> 25:00 </p>
     </div>
     <div class="row timerow">
       <div class="work timercontainer col-sm-6">
@@ -40,15 +45,10 @@
     </div>
     <div class="row pokerow">
       <div class="col-sm-6">
-        <button type="button" class="nes-btn is-success" id="start-stop">Toggle Start</button>
+        <button type="button" class="nes-btn is-success" id="start_stop">Toggle Start</button>
       </div>
-
       <div class="col-sm-6">
-        <button type="button" class="nes-btn is-error" id="reset">Reset Timer</button>
+        <button type="button" class="nes-btn is-error" id="reset">Reset Timers</button>
       </div>
-    <div class="row sessionrow">
-      <div class="col-sm-12">
-      </div>
-    </div>
   </body>
 </html>
