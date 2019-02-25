@@ -1,6 +1,12 @@
 body{
   font-family: 'Press Start 2P', monospace;
   background-color: #3B2A99;
+<<<<<<< HEAD
+=======
+  border: white solid;
+  height: 98.3vh;
+  width: 100;
+>>>>>>> dev
 }
 
 .heading{
