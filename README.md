@@ -1,2 +1,2 @@
-# eigth-bit-tomato
-A pomodoro timer made using NES.css
+# eight-bit-tomato
+A super-silly pomodoro timer made using the NES.css framework
