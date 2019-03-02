@@ -87,14 +87,20 @@ $(document).ready(function(){
       clearInterval(timer);
       if(working){
         $("#timer-label").text('Break!');
-
+        let value = ($("#break-length").text());
+        $("#time-left").text(value+":00");
+        working = false;
       }
       else{
         $$("#timer-label").text('Work!');
+        let value = ($("#session-length").text());
+        $("#time-left").text(value+":00");
+        working = true;
       }
     }
   }
 
+//move mirror to a separate function!! later
 
   $("#start_stop").click(function(){
       if(!running){
