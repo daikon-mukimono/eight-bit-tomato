@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>8-bit pomodoro timer</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- nes.css -->
+    <link href="https://unpkg.com/nes.css@2.0.0/css/nes.min.css" rel="stylesheet" />
+    <!-- specific style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Press 2P font -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <!-- javascript + jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"> </script>
+  </head>
+  <body>
+    <section class="container-fluid">
+      <h1 class="heading">8-bit pomodoro <i class="nes-mario"></i></h1>
+      <div class="row">
+        <div class="col-sm-12">
+        <p id="timer-label">Work!</p>
+        </div>
+      </div>
+      <div class="timer-row col-sm-12">
+      <p id="time-left">25:00</p>
+      </div>
+      <div class="row timerow">
+        <div class="work timercontainer col-sm-6">
+          <p id="session-label">Work</p>
+          <div class="work-timer">
+              <button type="button" id="session-decrement"> <i class="nes-logo">  </i></button>
+              <p class="work time-left" id="session-length">25</p>
+              <button type="button" id="session-increment"> <i class="snes-logo">  </i></button>
+          </div>
+        </div>
+        <div class="break timercontainer col-sm-6">
+          <p id="break-label">Break</p>
+          <div class="break-timer">
+              <button type="button" id="break-decrement"><i class="nes-logo" > </i></button>
+              <p class="break time-left" id="break-length">5</p>
+              <button type="button" id="break-increment"><i class="snes-logo" i> </i></button>
+          </div>
+        </div>
+      </div>
+      <div class="row pokerow">
+        <div class="col-sm-6">
+          <button type="button" class="nes-btn is-success" id="start_stop">Toggle Start</button>
+        </div>
+        <div class="col-sm-6">
+          <button type="button" class="nes-btn is-error" id="reset">Reset Timers</button>
+        </div>
+    </section>
+  </body>
+</html>
