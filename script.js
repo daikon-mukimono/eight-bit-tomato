@@ -92,7 +92,7 @@ $(document).ready(function(){
         working = false;
       }
       else{
-        $$("#timer-label").text('Work!');
+        $("#timer-label").text('Work!');
         let value = ($("#session-length").text());
         $("#time-left").text(value+":00");
         working = true;
